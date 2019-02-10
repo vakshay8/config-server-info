@@ -19,9 +19,9 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
   datasource:
-    url: jdbc:mysql://localhost:3306/viswa?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/xxxx?createDatabaseIfNotExist=true
     username: root
-    password: Akshay01!
+    password: xxxxxx
     driver-class-name: com.mysql.jdbc.Driver
     
 
