@@ -5,8 +5,10 @@ eureka:
     service-url:
       defaultZone: http://localhost:8762/eureka/
 zuul:
+  ignored-services: *
   routes:
     employee-service:
       path: /**
       url: http://localhost:8080/
+      service-id: employee-service
 
