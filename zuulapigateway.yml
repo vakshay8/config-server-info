@@ -4,16 +4,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8762/eureka/
-zuul:
-  routes:
-    employee-service:
-      path: /**
-      url: http://localhost:8080/
-      stripPrefix: true      
-  host:
-    socket-timeout-millis: 30000
-ribbon:
-  eureka:
-    enabled: true
-  restclient:
-    enabled: true
