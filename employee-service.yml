@@ -5,3 +5,7 @@ spring:
     name: employee-service
 employee-service:
   greeting: hello employee
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
