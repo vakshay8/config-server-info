@@ -1,22 +1,27 @@
 server:
   port: 8090
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka/
+      
+student-service:
+  greeting: hellostudent
+  
 spring:
   application:
     name: student-service
-   jpa:
+  jpa:
     show-sql: true
     hibernate:
       ddl-auto: create
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    datasource:
-      url:  jdbc:mysql://localhost:3306/viswa?createDatabaseIfNotExist=true
-      username: root
-      password: Akshay01!
-      driver-class-name: com.mysql.jdbc.Driver
-student-service:
-  greeting: hellostudent
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8762/eureka/  
+  datasource:
+    url: jdbc:mysql://localhost:3306/viswa?createDatabaseIfNotExist=true
+    username: root
+    password: Akshay01!
+    driver-class-name: com.mysql.jdbc.Driver
+    
+
