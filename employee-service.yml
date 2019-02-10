@@ -3,6 +3,17 @@ server:
 spring:
   application:
     name: employee-service
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    datasource:
+      url:  jdbc:mysql://localhost:3306/viswa?createDatabaseIfNotExist=true
+      username: root
+      password: Akshay01!
+      driver-class-name: com.mysql.jdbc.Driver
 employee-service:
   greeting: hello employee
 eureka:
